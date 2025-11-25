@@ -54,6 +54,11 @@ cp query.counts plot_query.tmp
 awk '{len=$3-$2; count[len]++} END{for(l in count) print l, count[l]}' query.rescaled.bed > plot_output.tmp
 
 ```
+**Output:**
+* `plot_ref.tmp`
+* `plot_query.tmp`
+* `plot_output.tmp`
+
 ### For Graph
 
 Run this `final_plot.R` R file for Visualization script to verify that the output matches the reference
@@ -61,5 +66,6 @@ Run this `final_plot.R` R file for Visualization script to verify that the outpu
 ```bash
 Rscript final_plot.R
 ```
-
+**Output:**
+* `result_graph.png`
 

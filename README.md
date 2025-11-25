@@ -58,4 +58,8 @@ awk '{len=$3-$2; count[len]++} END{for(l in count) print l, count[l]}' query.res
 
 Run this `final_plot.R` R file for Visualization script to verify that the output matches the reference
 
+```bash
+Rscript final_plot.R
+```
+
 
